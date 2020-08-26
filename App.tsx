@@ -12,10 +12,14 @@ import {
 import WorkScreen from "./View/WorkScreen/WorkScreen";
 import { store } from "./Model/redux/storage";
 
+
 const bottomTabNavigator = createBottomTabNavigator();
+
+
 
 export default function App() {
   const scheme = useColorScheme();
+
 
   return (
     <Provider store={store}>
@@ -33,11 +37,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
