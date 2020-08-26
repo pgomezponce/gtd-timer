@@ -3,10 +3,11 @@ import { Text, View } from 'react-native'
 
 import {createStackNavigator} from '@react-navigation/stack';
 import WorkonBoarding from './components/WorkonBoarding';
+import WorkForm from './components/WorkForm';
 
 const stack = createStackNavigator();
 
-const names = {
+export const names = {
     onBoarding: 'New Sprint!',
     form:"Sprint for...",
     timer:'Sprinting..',
@@ -19,6 +20,7 @@ export default class WorkScreen extends Component {
         return (
             <stack.Navigator>
                 <stack.Screen name={names.onBoarding} component={WorkonBoarding} />
+                <stack.Screen name={names.form} component={WorkForm} />
             </stack.Navigator>
         )
     }
