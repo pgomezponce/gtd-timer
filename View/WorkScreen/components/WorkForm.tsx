@@ -8,9 +8,10 @@ import { sprintUpdate } from "../../../Model/redux/actions";
 import { Formik } from "formik";
 
 import * as yup from "yup";
+import { work_components } from "../WorkScreen";
 
 const validationSchema = yup.object().shape({
-  hours: yup.number().required().positive().integer().lessThan(12),
+  hours: yup.number().required().moreThan(-1).integer().lessThan(12),
   minutes: yup.number().required().moreThan(-1).integer().lessThan(60),
 });
 
@@ -23,10 +24,6 @@ const convertToDate = (hours, minutes) => {
 
 export class WorkForm extends Component {
 
-  constructor(props){
-    super(props);
-  }
-
   render() {
     console.log(this.props);
 
@@ -35,7 +32,8 @@ export class WorkForm extends Component {
         initialValues={{ hours: "", minutes: "" }}
         validateOnChange={true}
         onSubmit={(val) => {
-          this.props.sprintUpdate({credit: convertToDate(val.hours, val.minutes)});          
+          this.props.sprintUpdate({credit: convertToDate(val.hours, val.minutes)});        
+          this.props.navigation.navigate(work_components.timer)  
         }}
         validationSchema={validationSchema}
         initialErrors={{ hours: "", minutes: "" }}
@@ -52,21 +50,21 @@ export class WorkForm extends Component {
         }) => (
           <View style={gtd_stylesheet.container}>
             <View style={gtd_stylesheet.upperPart}>
-              <Text h2>For how long are you going to sprint?</Text>
+              <Text h2 style={gtd_stylesheet.textCenter}>For how long are you going to sprint?</Text>
 
               <View style={gtd_stylesheet.formContainer}>
                 <View>
                   <Input
                     keyboardType="numeric"
                     placeholder="hh"
-                    inputStyle={{ textAlign: "right" }}
+                    inputStyle={gtd_stylesheet.textCenter}
                     onChangeText={handleChange("hours")}
                     onBlur={handleBlur("hours")}
                     value={values.hours}
                   />
                   {touched.hours && errors.hours && <Text>{errors.hours}</Text>}
                 </View>
-                <Text>:</Text>
+                <Text style={gtd_stylesheet.textCenter}>:</Text>
                 <View>
                   <Input
                     keyboardType="numeric"
@@ -74,6 +72,7 @@ export class WorkForm extends Component {
                     onChangeText={handleChange("minutes")}
                     onBlur={handleBlur("minutes")}
                     value={values.minutes}
+                    inputStyle={gtd_stylesheet.textCenter}
                   />
                   {touched.minutes && errors.minutes && (
                     <Text>{errors.minutes}</Text>
