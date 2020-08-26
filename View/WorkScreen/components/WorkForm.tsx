@@ -3,6 +3,8 @@ import { View } from "react-native";
 import { Text, Input, Button } from "react-native-elements";
 import { gtd_stylesheet } from "../../styles";
 
+import {connect} from 'react-redux';
+import { sprintUpdate } from "../../../Model/redux/actions";
 import { Formik } from "formik";
 
 import * as yup from "yup";
@@ -12,17 +14,32 @@ const validationSchema = yup.object().shape({
   minutes: yup.number().required().moreThan(-1).integer().lessThan(60),
 });
 
-export default class WorkForm extends Component {
+const convertToDate = (hours, minutes) => {
+  let value = hours * 60 * 60 * 1000 + minutes * 60 *1000;
+
+  return value;
+}
+
+
+export class WorkForm extends Component {
+
+  constructor(props){
+    super(props);
+  }
+
   render() {
+    console.log(this.props);
+
     return (
       <Formik
         initialValues={{ hours: "", minutes: "" }}
         validateOnChange={true}
         onSubmit={(val) => {
-          console.log(val);
+          this.props.sprintUpdate({credit: convertToDate(val.hours, val.minutes)});          
         }}
         validationSchema={validationSchema}
         initialErrors={{ hours: "", minutes: "" }}
+        
       >
         {({
           handleChange,
@@ -76,3 +93,13 @@ export default class WorkForm extends Component {
     );
   }
 }
+const mapStateToProps = state => ({
+  sprintCred: state.sprint
+})
+
+
+const mapReducerToProps = {
+  sprintUpdate: sprintUpdate,
+}
+
+export default connect(mapStateToProps, mapReducerToProps)(WorkForm)
