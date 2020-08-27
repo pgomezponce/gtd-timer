@@ -1,0 +1,38 @@
+{
+  "files": {
+    "app.js": "pgomezponce.github.io/gtd-timer/static/js/app.796bed1f.chunk.js",
+    "app.js.map": "pgomezponce.github.io/gtd-timer/static/js/app.796bed1f.chunk.js.map",
+    "runtime~app.js": "pgomezponce.github.io/gtd-timer/static/js/runtime~app.06f74cef.js",
+    "runtime~app.js.map": "pgomezponce.github.io/gtd-timer/static/js/runtime~app.06f74cef.js.map",
+    "static/js/2.9a6ec290.chunk.js": "pgomezponce.github.io/gtd-timer/static/js/2.9a6ec290.chunk.js",
+    "static/js/2.9a6ec290.chunk.js.map": "pgomezponce.github.io/gtd-timer/static/js/2.9a6ec290.chunk.js.map",
+    "fonts/AntDesign.ttf": "pgomezponce.github.io/gtd-timer/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "pgomezponce.github.io/gtd-timer/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "pgomezponce.github.io/gtd-timer/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "pgomezponce.github.io/gtd-timer/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "pgomezponce.github.io/gtd-timer/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "pgomezponce.github.io/gtd-timer/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "pgomezponce.github.io/gtd-timer/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "pgomezponce.github.io/gtd-timer/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "pgomezponce.github.io/gtd-timer/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "pgomezponce.github.io/gtd-timer/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "pgomezponce.github.io/gtd-timer/./fonts/MaterialIcons.ttf",
+    "fonts/SimpleLineIcons.ttf": "pgomezponce.github.io/gtd-timer/./fonts/SimpleLineIcons.ttf",
+    "favicon-16.png": "pgomezponce.github.io/gtd-timer/favicon-16.png",
+    "favicon-32.png": "pgomezponce.github.io/gtd-timer/favicon-32.png",
+    "favicon.ico": "pgomezponce.github.io/gtd-timer/favicon.ico",
+    "index.html": "pgomezponce.github.io/gtd-timer/index.html",
+    "manifest.json": "pgomezponce.github.io/gtd-timer/manifest.json",
+    "serve.json": "pgomezponce.github.io/gtd-timer/serve.json",
+    "static/js/2.9a6ec290.chunk.js.LICENSE.txt": "pgomezponce.github.io/gtd-timer/static/js/2.9a6ec290.chunk.js.LICENSE.txt",
+    "static/media/bell.png": "pgomezponce.github.io/gtd-timer/static/media/bell.cf04af27.png",
+    "static/media/heart.png": "pgomezponce.github.io/gtd-timer/static/media/heart.23b5c2c0.png",
+    "static/media/rocket.png": "pgomezponce.github.io/gtd-timer/static/media/rocket.d2f3bf41.png",
+    "static/media/star.png": "pgomezponce.github.io/gtd-timer/static/media/star.69c71386.png"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.06f74cef.js",
+    "static/js/2.9a6ec290.chunk.js",
+    "static/js/app.796bed1f.chunk.js"
+  ]
+}
