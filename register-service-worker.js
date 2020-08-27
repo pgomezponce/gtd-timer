@@ -1,1 +1,1 @@
-"serviceWorker"in navigator&&window.addEventListener("load",(function(){navigator.serviceWorker.register("pgomezponce.github.io/gtd-timer/expo-service-worker.js",{scope:"pgomezponce.github.io/gtd-timer/"}).then((function(e){})).catch((function(e){console.info("Failed to register service-worker",e)}))}));
+"serviceWorker"in navigator&&window.addEventListener("load",(function(){navigator.serviceWorker.register("/gtd-timer/expo-service-worker.js",{scope:"/gtd-timer/"}).then((function(e){})).catch((function(e){console.info("Failed to register service-worker",e)}))}));

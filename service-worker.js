@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "pgomezponce.github.io/gtd-timer/precache-manifest.5e51c850803aff07b1114d12b5008cff.js"
+  "/gtd-timer/precache-manifest.57fa2838e4cfdb53859454d23c14e42c.js"
 );
 
 workbox.skipWaiting();
@@ -29,7 +29,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("pgomezponce.github.io/gtd-timer/index.html", {
+workbox.routing.registerNavigationRoute("/gtd-timer/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
