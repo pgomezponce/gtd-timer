@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { View, KeyboardAvoidingView } from "react-native";
 import { Text, Input, Button } from "react-native-elements";
 import { gtd_stylesheet } from "../../styles";
 
@@ -48,31 +48,31 @@ export class WorkForm extends Component {
           isValid,
           touched,
         }) => (
-          <View style={gtd_stylesheet.container}>
+          <KeyboardAvoidingView style={gtd_stylesheet.container} behavior='padding'>
             <View style={gtd_stylesheet.upperPart}>
               <Text h2 style={gtd_stylesheet.textCenter}>For how long are you going to sprint?</Text>
 
-              <View style={gtd_stylesheet.formContainer}>
-                <View>
+              <View style={[gtd_stylesheet.formContainer]}>
+                <View style={{width:'50%'}}>
                   <Input
                     keyboardType="numeric"
                     placeholder="hh"
-                    inputStyle={gtd_stylesheet.textCenter}
+                    inputStyle={[gtd_stylesheet.textCenter, {textAlign:'right'}]}
                     onChangeText={handleChange("hours")}
                     onBlur={handleBlur("hours")}
                     value={values.hours}
                   />
-                  {touched.hours && errors.hours && <Text>{errors.hours}</Text>}
+                  {touched.hours && errors.hours && <Text style={{textAlign:'right'}}>{errors.hours}</Text>}
                 </View>
                 <Text style={gtd_stylesheet.textCenter}>:</Text>
-                <View>
+                <View style={{width:'50%'}}>
                   <Input
                     keyboardType="numeric"
                     placeholder="mm"
                     onChangeText={handleChange("minutes")}
                     onBlur={handleBlur("minutes")}
                     value={values.minutes}
-                    inputStyle={gtd_stylesheet.textCenter}
+                    inputStyle={[gtd_stylesheet.textCenter,{textAlign:'left'}]}
                   />
                   {touched.minutes && errors.minutes && (
                     <Text>{errors.minutes}</Text>
@@ -86,7 +86,7 @@ export class WorkForm extends Component {
               onPress={handleSubmit}
               disabled={!isValid}
             />
-          </View>
+          </KeyboardAvoidingView>
         )}
       </Formik>
     );
