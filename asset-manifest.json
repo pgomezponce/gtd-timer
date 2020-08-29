@@ -1,11 +1,11 @@
 {
   "files": {
-    "app.js": "/gtd-timer/static/js/app.da3c361d.chunk.js",
-    "app.js.map": "/gtd-timer/static/js/app.da3c361d.chunk.js.map",
+    "app.js": "/gtd-timer/static/js/app.867287e2.chunk.js",
+    "app.js.map": "/gtd-timer/static/js/app.867287e2.chunk.js.map",
     "runtime~app.js": "/gtd-timer/static/js/runtime~app.814ec4b1.js",
     "runtime~app.js.map": "/gtd-timer/static/js/runtime~app.814ec4b1.js.map",
-    "static/js/2.9a6ec290.chunk.js": "/gtd-timer/static/js/2.9a6ec290.chunk.js",
-    "static/js/2.9a6ec290.chunk.js.map": "/gtd-timer/static/js/2.9a6ec290.chunk.js.map",
+    "static/js/2.1b70af1b.chunk.js": "/gtd-timer/static/js/2.1b70af1b.chunk.js",
+    "static/js/2.1b70af1b.chunk.js.map": "/gtd-timer/static/js/2.1b70af1b.chunk.js.map",
     "fonts/AntDesign.ttf": "/gtd-timer/./fonts/AntDesign.ttf",
     "fonts/Entypo.ttf": "/gtd-timer/./fonts/Entypo.ttf",
     "fonts/Feather.ttf": "/gtd-timer/./fonts/Feather.ttf",
@@ -24,7 +24,7 @@
     "index.html": "/gtd-timer/index.html",
     "manifest.json": "/gtd-timer/manifest.json",
     "serve.json": "/gtd-timer/serve.json",
-    "static/js/2.9a6ec290.chunk.js.LICENSE.txt": "/gtd-timer/static/js/2.9a6ec290.chunk.js.LICENSE.txt",
+    "static/js/2.1b70af1b.chunk.js.LICENSE.txt": "/gtd-timer/static/js/2.1b70af1b.chunk.js.LICENSE.txt",
     "static/media/bell.png": "/gtd-timer/static/media/bell.cf04af27.png",
     "static/media/heart.png": "/gtd-timer/static/media/heart.23b5c2c0.png",
     "static/media/rocket.png": "/gtd-timer/static/media/rocket.d2f3bf41.png",
@@ -32,7 +32,7 @@
   },
   "entrypoints": [
     "static/js/runtime~app.814ec4b1.js",
-    "static/js/2.9a6ec290.chunk.js",
-    "static/js/app.da3c361d.chunk.js"
+    "static/js/2.1b70af1b.chunk.js",
+    "static/js/app.867287e2.chunk.js"
   ]
 }
